@@ -5,9 +5,9 @@ ____
 
 ## QuickNav
 
-[Project One](##Project-One-a-world-on-fire)
+[Project One](#project-one-a-world-on-fire)
 
-[Project Two](##Project-Two-but-deliver-us-from-evil)
+[Project Two](#project-two-but-deliver-us-from-evil)
 
 ____
 
