@@ -1,12 +1,13 @@
 # Alternate Realities
 
+##### There are currently broken images because I deleted the repo and apparently I didn't save the images...
 ____
 
 ## QuickNav
 
-[Project One](#Project-One)
+[Project One](#Project-One-a-world-on-fire)
 
-[Project Two](#Project-Two)
+[Project Two](#Project-Two-but-deliver-us-from-evil)
 
 ____
 
@@ -493,9 +494,6 @@ And once the mixture has melted, you’re prompted to place the pot onto a table
         
     }
 
-
-
-
 #### The Stove 
 After the razzle dazzle interactions and the mixing, the pot is then moved to be placed on the stove! The stove’s interaction sequence is as follows: 
 
@@ -566,7 +564,7 @@ The code is also fairly straightforward:
 
 #### The Ending
 
-
+Fades to black. *Kaboom* in the background.
 
 #### Playtesting
 
@@ -589,6 +587,8 @@ Another thing was the UI. We wanted to implement floating text in front of each 
 
 And of course there’s the super clean mesh slicing that I never got to coding.
 
+Audio was something that we wanted to add–– the reports of bombings while you're cooking your mixture is meant to be a foreshadowing of what you're actually doing. And the ending report is supposed to be telling you what you're making and that you're the evil. That the evil you need to be delivered from is yourself. But anyway, that's something we couldn't get done because we were working too much on the interactions...
+
 
 ### But All in All… Ain't Doin' This Again (Part 2 of 3)
 
@@ -596,4 +596,4 @@ Things didn’t turn out too shabby. In fact, I think I’m somewhat satisfied w
 
 It wasn't a complete disaster like last project, but there were still times when I felt that things were out of my control and I didn't know how to properly implement something and ended up compromising. I think there's going to be a lot of this kind of thing happening from now on. I suppose it's better than having *literally no idea what's going on*, though.
 
-In any case, I have to say it again (since I said I would): ain't doin' this again.
+There were so many unexpected bugs and each time they triggered I would have a moment of thinking "what am I doing". And so I can say for a second time, I ain't doin' this again. See you next project.
