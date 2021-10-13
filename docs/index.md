@@ -576,12 +576,12 @@ Another issue was where the scene would push you off the map. We’re not sure *
 
 There were other really random things, like the pot suddenly disappearing from the map, that happened very rarely, but we didn’t know where to start (so we didn’t lol).
 
-Overall, we got a lot of positive feedback from our playtesters. They really liked the various interactions, especially the cutting and razzle dazzle (I knew it would catch on haha). There was mention of a disconnect from the cooking the mixture to suddenly having a bomb to wire, though. This was caused by the fact that we had omitted a step from the interactions, where you pour the mixture in the pot into a mold, which then can be opened to reveal the bomb.
+Overall, we got a lot of positive feedback from our playtesters. They really liked the various interactions, especially the cutting and razzle dazzle (I knew it would catch on haha). There was mention of a disconnect from the cooking the mixture to suddenly having a bomb to wire, though. This was caused by the fact that we had omitted a step from the interactions, where you pour the mixture in the pot into a mold, which then can be opened to reveal the bomb. We tried to address this by making it so the inside of the pot would empty, leaving an explosive brick next to it with the same color as the mixture that was in the pot. We hoped that conveyed the transition better.
 
 
 #### Things Left Unsaid and Undone…
 
-There are some features that we *wanted* to add but didn’t have the time to do so. One of them was, as mentioned earlier, the step of molding the mixture into the shape of a bomb. I wanted to make the user mold it themselves, but then due to skill constraints that turned to using a cookie cutter, then just getting rid of the step altogether as we realized that it was a redundant interaction. It took a toll on the story flow, though, which really sucks.
+There are some features that we *wanted* to add but didn’t have the time to do so. One of them was, as mentioned earlier, the step of molding the mixture into the shape of a bomb. I wanted to make the user mold it themselves, but then due to skill constraints that turned to using a cookie cutter, then just getting rid of the step altogether as we realized that we didn't have the time to implement it.
 
 Another thing was the UI. We wanted to implement floating text in front of each table that would tell them what they needed to do, but we didn’t have the time to put that in.
 
