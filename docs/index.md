@@ -191,7 +191,7 @@ But this was still kind of a nightmare to do (many all-nighters, even more issue
 
 ____
 
-## Project 2: but deliver us from evil.
+## Project Two: but deliver us from evil.
 
 ### Intro: Here We Go Again...
 Welcome to another episode of nightmares in coding and all-nighters! Not as many all-nighters this time round, but just as many (if not more) problems!
@@ -310,7 +310,7 @@ The script attached to the parent object was one that would wait for a collision
             childRB.useGravity = true;
             childRB.isKinematic = false;
             // note: this means that the next child to be removed will be the FIRST child
-            yield return new WaitForSeconds(0.5f);
+            yield return new WaitForSeconds(0.3f);
             // removes the parent link between child and parent and allows each piece to move individually
             transform.GetChild(0).parent = null;
             childNum++;
@@ -506,6 +506,8 @@ The pot is now immobile and as it cooks, the mixture rises to the top
 
 ![](project2_pot3.png)
 
+The interaction with the dial is a bit less intuitive than the other interactions, where you need to either use the right joystick (push forward to select the dial) or a button to grab the dial, then rotate your wrist. We wanted to add some variety in the interactions, but maybe just using a direct grab interactable would have been a better idea.
+
 #### The Wiring Table
 
 Okay, so I’ve been using a range of words to address this. The molding table, the *moulding* table, Station 3… the point is that this is where the user will wire the bomb and complete it. The script for this bit is fairly simple, just your good ol' OnCollideEnter() checking for the collider and making the corresponding object appear on the bomb. Once it's complete, it gets rid of the final wall and lets you finish the game.
@@ -564,7 +566,7 @@ The code is also fairly straightforward:
 
 #### The Ending
 
-Fades to black. *Kaboom* in the background.
+Fades to black. *Kaboom* in the background. Quits the app. Yep, I found that we can use Application.Quit() to quit the app. It took a while to work out because apparently it doesn't work when it's inside a coroutine, meaning it needs to be called explicity within the Update() function. But yeah, it's pretty cool.
 
 #### Playtesting
 
@@ -572,11 +574,13 @@ We had a few people playtest our scene once we had implemented the interactions 
 
 One issue was that occasionally you would be unable to grab anything–– the controllers would simply stop working as you hold objects in your hand. I *think* (very tentative) I fixed the issue, because I *think* it was triggered by me using the Destroy() function wayyy too much in the scripts for the pot and the wiring. Once I used SetActive(false) instead, the issues seemed to stop (hopefully).
 
-Another issue was where the scene would push you off the map. We’re not sure *why* this is happening, but it only happens every now and then. We don’t know how to fix this and frankly didn’t have the time or energy (and sanity) to try.
+We also added a kinematic option to items when they first spawned so that the user wouldn't accidentally knock things around (including the pot), which was what had been happening quite often.
 
-There were other really random things, like the pot suddenly disappearing from the map, that happened very rarely, but we didn’t know where to start (so we didn’t lol).
+Another issue was where the scene would push you off the map. We’re not sure *why* this happened, but it rarely happens (maybe once every fifteen to twenty runs). We don’t know how to fix this and frankly didn’t have the time or energy (or sanity) to try.
 
-Overall, we got a lot of positive feedback from our playtesters. They really liked the various interactions, especially the cutting and razzle dazzle (I knew it would catch on haha). There was mention of a disconnect from the cooking the mixture to suddenly having a bomb to wire, though. This was caused by the fact that we had omitted a step from the interactions, where you pour the mixture in the pot into a mold, which then can be opened to reveal the bomb. We tried to address this by making it so the inside of the pot would empty, leaving an explosive brick next to it with the same color as the mixture that was in the pot. We hoped that conveyed the transition better.
+Overall, we got a lot of positive feedback from our playtesters. They really liked the various interactions, especially the cutting and razzle dazzle (I knew it would catch on haha). The streamline process of the stations was something that was implemented through playtesting as we realized some people felt lost when they spawned in the middle of the room.
+
+There was also mention of a disconnect from the cooking the mixture to suddenly having a bomb to wire, though (but that was kinda the point hehe). This may have been caused by the fact that we omitted a step from the interactions, where you pour the mixture in the pot into a mold, which then can be opened to reveal the bomb. We tried to address this by making it so the inside of the pot would empty, leaving an explosive brick next to it with the same color as the mixture that was in the pot. We hoped that conveyed the transition.
 
 
 #### Things Left Unsaid and Undone…
@@ -585,7 +589,7 @@ There are some features that we *wanted* to add but didn’t have the time to do
 
 Another thing was the UI. We wanted to implement floating text in front of each table that would tell them what they needed to do, but we didn’t have the time to put that in.
 
-And of course there’s the super clean mesh slicing that I never got to coding.
+And of course there’s the super clean mesh slicing that I never got to coding. But I got something similar by thinking about how users would start cutting the ingredients based on the starting location of the knife.
 
 Audio was something that we wanted to add–– the reports of bombings while you're cooking your mixture is meant to be a foreshadowing of what you're actually doing. And the ending report is supposed to be telling you what you're making and that you're the evil. That the evil you need to be delivered from is yourself. But anyway, that's something we couldn't get done because we were working too much on the interactions...
 
@@ -596,4 +600,4 @@ Things didn’t turn out too shabby. In fact, I think I’m somewhat satisfied w
 
 It wasn't a complete disaster like last project, but there were still times when I felt that things were out of my control and I didn't know how to properly implement something and ended up compromising. I think there's going to be a lot of this kind of thing happening from now on. I suppose it's better than having *literally no idea what's going on*, though.
 
-There were so many unexpected bugs and each time they triggered I would have a moment of thinking "what am I doing". And so I can say for a second time, I ain't doin' this again. See you next project.
+There were so many unexpected bugs and each time they triggered and I couldn't let go of the cutting board and pot I would have a moment of thinking "what am I doing?" And so I can say for a second time, I ain't doin' this again. Anyway, see you next project.
