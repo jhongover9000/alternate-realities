@@ -477,6 +477,8 @@ I also used visual feedback to show the user that certain actions have been comp
 
 ![](media/project2_pot2.png)
 
+![](media/project2_pot3.png)
+
 This was placed on the stove’s script after some debugging showed that when the pot is on the stove and, during the time that the user would move the dial, the trigger event would pass. But it’s still really fun to watch the ingredients ‘melt’.
 
 And once the mixture has melted, you’re prompted to place the pot onto a table in the next station. This is where the script for the pot ends, as when you place it on the wiring table it will trigger things for the wiring of the explosive.
@@ -506,8 +508,6 @@ Dial:
 - You hear the stove turning on, followed by sounds of the gas 
 The pot is now immobile and as it cooks, the mixture rises to the top 
 
-![](media/project2_pot3.png)
-
 The interaction with the dial is a bit less intuitive than the other interactions, where you need to either use the right joystick (push forward to select the dial) or a button to grab the dial, then rotate your wrist. We wanted to add some variety in the interactions, but maybe just using a direct grab interactable would have been a better idea.
 
 #### The Wiring Table
@@ -515,6 +515,8 @@ The interaction with the dial is a bit less intuitive than the other interaction
 Okay, so I’ve been using a range of words to address this. The molding table, the *moulding* table, Station 3… the point is that this is where the user will wire the bomb and complete it. The script for this bit is fairly simple, just your good ol' OnCollideEnter() checking for the collider and making the corresponding object appear on the bomb. Once it's complete, it gets rid of the final wall and lets you finish the game.
 
 ![](media/project2_wiring.png)
+
+![](media/project2_bomb.png)
 
 The code is also fairly straightforward:
 
