@@ -10,12 +10,12 @@ public class IngredientController : MonoBehaviour
     Coroutine cutInterval;
 
     private int childNum = 0;
-    private int childCount;
+    bool isInteractible = true;
 
-    private void Start()
-    {
-        childCount = transform.childCount;
-    }
+    //private void Start()
+    //{
+    //    transform = gameObject.GetComponent<Transform>();
+    //}
 
     private void OnTriggerExit(Collider other)
     {
@@ -31,26 +31,23 @@ public class IngredientController : MonoBehaviour
     IEnumerator cutIngredient(Collider collider)
     {
         // cut next child inside ingredient by deactivating kinematic
-        if (childNum < childCount-3)
+        if (childNum < transform.childCount - 2)
         {
             Debug.Log("cutting");
-            Rigidbody childRB;
-            // because each new first child is the child that we're trying to remove
-            childRB = transform.GetChild(0).gameObject.AddComponent<Rigidbody>();
-
-            // add gravity and turn off kinematic
+            Rigidbody childRB = transform.GetChild(childNum).gameObject.AddComponent<Rigidbody>();
             childRB.useGravity = true;
             childRB.isKinematic = false;
-            // note: this means that the next child to be removed will be the FIRST child
-            yield return new WaitForSeconds(0.5f);
-            // removes the parent link between child and parent and allows each piece to move individually
-            transform.GetChild(0).parent = null;
+            yield return new WaitForSeconds(1);
             childNum++;
         }
-        else {
-            // get rid of parent object after all pieces have been cut
-            //Destroy(gameObject);
-            gameObject.SetActive(false);
+        else
+        {
+            // set as non-interacible layer
+            if (isInteractible)
+            {
+                gameObject.layer = 6;
+                isInteractible = false;
+            }
         }
 
     }

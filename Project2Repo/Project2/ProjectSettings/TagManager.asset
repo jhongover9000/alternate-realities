@@ -4,23 +4,10 @@
 TagManager:
   serializedVersion: 2
   tags:
+  - Ground
   - Knife
   - Floor
   - GrabCube
-  - Dazzle
-  - Razzle
-  - Spoon
-  - Stove
-  - Mold Table
-  - Ingredient
-  - Pot
-  - Red Wire
-  - Blue Wire
-  - Detonator
-  - StoveTrigger
-  - dialHand
-  - Fire
-  - Bomb
   layers:
   - Default
   - TransparentFX

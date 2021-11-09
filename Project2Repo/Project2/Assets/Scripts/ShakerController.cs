@@ -15,9 +15,8 @@ public class ShakerController : MonoBehaviour
         for(int i = 0; i < 9; i++)
         {
             GameObject particle = GameObject.Instantiate(particlePrefab, generationLoc.position, generationLoc.rotation);
-            particle.gameObject.tag = particlePrefab.tag;
             Rigidbody rb = particle.GetComponent<Rigidbody>();
-            rb.AddForce(particle.transform.forward * Random.Range(force,1.5f*force));
+            rb.AddForce(particle.transform.forward * force);
 
         }
     }

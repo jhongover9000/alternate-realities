@@ -7,14 +7,8 @@ public class FloorTimeout : MonoBehaviour
     public float duration = 5.0f;
     public bool startTimer = false;
     public Transform spawnLoc;
-    public Rigidbody rb;
 
     Coroutine timeout;
-
-    private void Start()
-    {
-        rb = gameObject.GetComponent<Rigidbody>();
-    }
 
     private void OnCollisionEnter(Collision collision)
     {
@@ -34,8 +28,6 @@ public class FloorTimeout : MonoBehaviour
         yield return new WaitForSeconds(duration);
 
         transform.position = spawnLoc.position;
-        rb.isKinematic = true;
-        
     }
 
     public void ClearTimeout()
