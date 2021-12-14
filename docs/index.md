@@ -655,28 +655,28 @@ Another theme was the concept of family bonds. One of the hardest things to do w
 
 As usual, before getting too deep into the process, here's a quick look at the results of our labor. There's quite a lot to see. There are technically 5 scenes: a menu, the lobby, a cutscene, the forest, and finally the shrine, where everything comes to an end.
 
-![](project3_screenshot1.png)
-![](project3_screenshot2.png)
-![](project3_screenshot3.png)
-![](project3_screenshot4.png)
+![](media/project3_screenshot1.png)
+![](media/project3_screenshot2.png)
+![](media/project3_screenshot3.png)
+![](media/project3_screenshot4.png)
 
 *The Menu and Lobby*
 
-![](project3_screenshot5.png)
-![](project3_screenshot6.png)
-![](project3_screenshot7.png)
+![](media/project3_screenshot5.png)
+![](media/project3_screenshot6.png)
+![](media/project3_screenshot7.png)
 
 *The Theatre Cutscene*
 
-![](project3_screenshot8.png)
-![](project3_screenshot9.png)
-![](project3_screenshot10.png)
+![](media/project3_screenshot8.png)
+![](media/project3_screenshot9.png)
+![](media/project3_screenshot10.png)
 
 *The Bamboo Forest*
 
-![](project3_screenshot11.png)
-![](project3_screenshot12.png)
-![](project3_screenshot13.png)
+![](media/project3_screenshot11.png)
+![](media/project3_screenshot12.png)
+![](media/project3_screenshot13.png)
 
 *The Shrine*
 
