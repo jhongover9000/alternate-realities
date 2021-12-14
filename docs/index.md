@@ -655,8 +655,6 @@ Another theme was the concept of family bonds. One of the hardest things to do w
 
 As usual, before getting too deep into the process, here's a quick look at the results of our labor. There's quite a lot to see. There are technically 5 scenes: a menu, the lobby, a cutscene, the forest, and finally the shrine, where everything comes to an end.
 
-<iframe src="https://drive.google.com/file/d/19TwT-EVHPf42tWsdsR9201iX9w0wNQyk/preview" width="640" height="480" allow="autoplay"></iframe>
-
 ![](project3_screenshot1.png)
 ![](project3_screenshot2.png)
 ![](project3_screenshot3.png)
