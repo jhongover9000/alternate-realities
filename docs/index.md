@@ -614,7 +614,7 @@ ____
 
 ## Project Three: our demons.
 
-###### Collab with Rainee and Hazel. Some images may not load properly. A full documentation with images can be found [here](https://docs.google.com/document/d/1jxSutub3TDbDuDQOvQ2qeUnnLjQfdLTvXxk5bAiBYIM/edit?usp=sharing). 
+###### Collab with Rainee and Hazel. Some images may not load properly. A full documentation with images can be found [here](https://docs.google.com/document/d/1jxSutub3TDbDuDQOvQ2qeUnnLjQfdLTvXxk5bAiBYIM/edit?usp=sharing). The video walkthroughs can be found [here](https://drive.google.com/drive/folders/1XfBfHNH0NxRfxYkxnn2UpA0_c-5Jft8b?usp=sharing).
 
 ### Introducing The Final(?) Project
 
@@ -697,6 +697,8 @@ Write C# scripts for simple XR interactions
 
 Next, I will walk you through my visual design journey. Please come with me :)
 
+###### The images are not all uploaded. A full documentation with images can be found [here](https://docs.google.com/document/d/1jxSutub3TDbDuDQOvQ2qeUnnLjQfdLTvXxk5bAiBYIM/edit?usp=sharing). 
+
 ##### Environment Design 
 
 We intended to use environmental storytelling as a key element of an immersive experience. Ideally, everything you can look at has a meaning, and every object, layout, color tells part of the story. I designed the space based on the following principles which I hope are at least partially achieved in our final delivery: 
@@ -710,16 +712,21 @@ We intended to use environmental storytelling as a key element of an immersive e
 
 While we are using 3rd party low poly assets in most of the places, we adjusted them quite a lot to fit the special use and also made our own assets. This saves us a lot of times from building everything from scratch, and has a consistent visual style. So we can focus more on the interactions that tell stories or push forward the plots. 
 
-##### The Book
+##### The book
 In the lobby scene, I made a book which you can actually flip through, read, and listen to. This book is *your* work journal, documenting the yokai you have hunted before. I selected the portrayed youkai based on real Japanese folklore. They live in mountains, and have something to do with their family. This is intended to hint the time when the story happens, the job of the character, a response to the environment, and a trailer of what will happen next: you will encounter some of those yokai, either their voice or human embodiment, in the following scenes. 
 
-##### Lightings
-Lighting as part of storytelling
-Color contrasts
-Animated lighting
-The use of spot light: creating dramatic atmosphere
-Techniques
-Light baking(screenshots of lightmaps)
+##### The paintings, portraits, and photos
+As demonstrated in scene 2: Memory, I also drew the paintings for the characters’ portraits. I did so not to show off my painting skills but to, again, make the story more clear. Since we are using dialogues and voiceover to tell the story, the characters didn’t show up until the story was already too heavy to catch up without visual messages. For a more user-friendly way of storytelling, it is essential to visually clear things out: who are Hisashi, Hinako, Ayane, and Ryuuji? How do we even spell their names? What do they potentially look like? Those are all revealed as a spotlight lights up the photos on the wall, as the voiceover introduces every one of them. 
+
+This was the cheapest way to tell as much of the story as we could in a less boring way. And admittedly, it was a nice mix if we put 2D drawing and 3D environment together, This somehow also echoes to the time when the story happens, when there was no chamera
+
+I simply used Probuilder to build many boxes as frames and canva, then applied the paintings as the base map of a material, and then applied the material. I then animated those paintings to engage users, so that they don’t feel bored after hearing and watching for a long time. 
+
+
+##### Lighting as part of storytelling
+I used color contrasts to create different tensions and vibes to push forward the plot. In the house scene, the lighting is warm orange, with a nice sunset view. We are trying to create a zena and peaceful atmosphere to give users enough energy to collect information. While in the memory scene, the spotlight echoes to the oral narrative, lighting up the corresponding illustrations showing the same plot. In the bamboo scene, the sky bleeds, and it is foggy. This is the most intense and even horrible scene. In the last scene, it is bright again, giving you false hope of “finding Hinako '' which turns out to be only her soul – she was eaten by her mom. 
+The use of spot light in the memory scene was to create a dramatic atmosphere
+
 
 ##### 3D Animation: the 2.5D theater experiment
 Finding the cheapest way to convey the most condense and essential parts of the story. Inspired by an award winning VR story, the book of distance, I was astonished by how visually intriguing it is to when 2.5D meets 3D.
@@ -731,8 +738,17 @@ Finding the cheapest way to convey the most condense and essential parts of the 
 
 We developed the very first version of dialogue from our script [Project 3 Story Draft - Google Docs](https://docs.google.com/document/d/1gNRwIKRu3ZfWL_XIQKe4sougpuL44JMnqfeOfXkh66g/edit), imagining the most natural way of a common conversation while showing the player as much important background and plots as possible. Most of the dialogue happens between Hisashi, our protagonist, and Ryuuji, his brother/mentor, ending with a culminating conversation with Ayane where the conflict between them guides the player to make a final decision. During recording, the tongue-twisting lines get removed.
 
+##### Background Music
+From a few hours of searching and listening to, *keyword: Japanese, Horror, Triller, Ominous, Music, Instrumental,* finally found a perfect match from Hans Zimmer’s scores of The Last Samurai and edited it to the length and emotions that we want in our scene (shown in the Memory Scene Screenshots). Other background music is picked according to the emotional journey of the player too.
+
 ##### Sound effects
+
 I made a seperate audio script which outlines all the sound effects that needs to be added [YESNEW AUDIO of AR Project 3 Script Draft v1.0](https://docs.google.com/document/d/1Qm1hueVgGKUc6HndG_tESjcEZ_xWfP8Vp5boF0KEysM/edit?usp=sharing). Then I looked for sound effects on Youtube and Freesound. This is a listening and picking job which doesn’t need to be debugged (which is blessed). Some sounds need to be triggered or stopped, for example the Oni sound which should start when they approach and stop when they are dead. Thanks to Professor Michael Allison!!! He made this come true. And then I added different audio sources to different objects and twisted their 3D sound settings and reverbs. 
+
+##### Animations
+
+To achieve the manageable cinematic storytelling as I imagined, I used timeline animations to make the characters alive. This is a process of frame by frame adjustment of position, size, and rotation of objects. In the first version, all the characters only stand on the shrine stage to make their gestures since I couldn’t find out how to incorporate the animator that we learnt in autonomous agents to the timeline system. They turned out to be incompatible with each other so I continued on the timeline tool since I’ve done a large part of it. Later Professor suggested to me maybe it would work to record the animation of a parent object and yes it worked! The characters are moving around now. Walking and yelling, evil laughing and being cocky, calling magic spells and being dead, hooray!
+
 
 #### Scene Transitions - Joseph
 
