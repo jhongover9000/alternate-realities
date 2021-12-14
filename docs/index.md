@@ -662,9 +662,9 @@ As usual, before getting too deep into the process, here's a quick look at the r
 
 *The Menu and Lobby*
 
-![](media/project3_screenshot5.png)
-![](media/project3_screenshot6.png)
-![](media/project3_screenshot7.png)
+![](media/project3_screenshot5.gif)
+![](media/project3_screenshot6.gif)
+![](media/project3_screenshot7.gif)
 
 *The Theatre Cutscene*
 
