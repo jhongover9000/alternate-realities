@@ -5,15 +5,15 @@ ____
 
 ## QuickNav
 
-[Project One](#project-one-a-world-on-fire)
+[a world on fire.](#project-one-a-world-on-fire)
 
-[Project Two](#project-two-but-deliver-us-from-evil)
+[but deliver us from evil.](#project-two-but-deliver-us-from-evil)
 
-[Project Three](#project-three-our-demons)
+[our demons.](#project-three-our-demons)
 
 ____
 
-## Project One: a world on fire.
+## a world on fire.
 
 ### Intro: The Kickoff.
 
@@ -193,7 +193,7 @@ But this was still kind of a nightmare to do (many all-nighters, even more issue
 
 ____
 
-## Project Two: but deliver us from evil.
+## but deliver us from evil.
 
 ##### Collab with Dhabia
 
@@ -612,7 +612,7 @@ There were so many unexpected bugs and each time they triggered and I couldn't l
 ____
 
 
-## Project Three: our demons.
+## our demons.
 
 ###### Collab with Rainee and Hazel. Some images may not load properly. A full documentation with images can be found [here](https://docs.google.com/document/d/1jxSutub3TDbDuDQOvQ2qeUnnLjQfdLTvXxk5bAiBYIM/edit?usp=sharing). The video walkthroughs can be found [here](https://drive.google.com/drive/folders/1XfBfHNH0NxRfxYkxnn2UpA0_c-5Jft8b?usp=sharing).
 
