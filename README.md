@@ -1,2 +1,2 @@
 # alternate-realities
-Repository for the XR course Alternate Realities.
+Repository containing projects in Extended Reality (VR/AR).
