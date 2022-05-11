@@ -18,20 +18,20 @@ The plan was to have at least 4 interactions. The first was the cutting of ingre
 
 *Anyway,* the point was to make a fun little interactive scene for users to mess around with ingredients and have fun.
 
-!()[interactions_sketch1.png]
+!()[docs/media/interactions_sketch1.png]
 
-!()[interactions_sketch2.png]
+!()[docs/media/interactions_sketch2.png]
 
 But we also needed to make sure they’d go in order. The original idea was that we would make all items of a station non-interactive unless the user finished a step previous to it, but as we progressed I realized that scripting all of that would be a really, really big pain. I could have technically hardcoded it all, but I chose to take the easy way out and used walls (explained later).
 
 ### The Result
 Might as well start with the results of the project. These are some screenshots of the scene.
 
-!()[project2_screenshot1.png]
+!()[docs/media/project2_screenshot1.png]
 
 An overview of the scene (left)
 
-!()[project2_screenshot2.png]
+!()[docs/media/project2_screenshot2.png]
 
 An overview of the scene (right)
 
@@ -45,7 +45,7 @@ There were more things to consider in this project, now that interactions were o
 
 One thing that I decided the first moment we learned about locomotion and teleportation was that I was going to make smooth locomotion and turning, no matter what it took. I just didn’t like the concept of having to teleport everywhere and how snap turning didn’t give you enough freedom to look around. And so that’s what I did, surfing around the Internet in order to find how to make that a possibility. Turns out I didn’t have to look far, because the XR Interaction Toolkit that we had already had these features and I just needed to initialize them with some help from the Unity Manual and the authors’ GitHub repo.
 
-!()[project2_locomotion.png]
+!()[docs/media/project2_locomotion.png]
 
 Technically, I think that locomotion is a form of interaction. It’s the most basic kind of interaction that a player can make, though, so I wouldn’t consider it an interaction that would drive the plot forward (though you *could* argue that it *literally* drives the plot forward). Anyway, that’s not the point. The point is that I added smooth locomotion and turning and I am very happy with it.
 
@@ -75,7 +75,7 @@ And now we get to the ~~stressful~~ fun part, the scripting for interactions. Th
 
 So what I ended up doing was creating a parent object that encased a set of child objects, each of which would be the slices.
 
-!()[project2_ingredient1.png]
+!()[docs/media/project2_ingredient1.png]
 
 The script attached to the parent object was one that would wait for a collision to occur between the ingredient and the knife, after which a coroutine would be called in order to create a delay between the cutting of the ingredients (so the entire thing wouldn’t be cut at once). The coroutine basically takes the first child of the ingredient (the slice furthest to the right) and detaches it from the parent, then giving it a rigidbody so that it can be moved around. Here’s the code:
 
@@ -83,7 +83,7 @@ The script attached to the parent object was one that would wait for a collision
 
 The short delay in the coroutine is to ensure that there’s a delay of when the knife cuts the ingredients (so all of the slices won’t fall off at once). I had to balance slices falling off too fast and the smoothness of the knife-ingredient interaction. Anyway, when the knife comes in contact with the ingredient, it gives the illusion that the mesh has been cut, like this:
 
-!()[project2_ingredient2.png]
+!()[docs/media/project2_ingredient2.png]
 
 
 There’s a lot of work that can be done for this script, such as changing the dimensions of the ingredient parent object when it’s cut, as well as simply creating a new “ingredient” object in the case that the knife hits a random slice in the ingredient (which would be equipped with a trigger), effectively creating the “mesh slice” effect.
@@ -93,7 +93,7 @@ But the point of the interaction isn’t to make it realistic (if I had the time
 
 Yes, you read that right. If you look in the scene, you’ll see that I named my shakers Razzle and Dazzle. And, so, when you use them to add a little spice to the ingredients, you’re essentially adding some razzle dazzle to the mixture. I just had to. Sorry.
 
-!()[project2_razzledazzle.png]
+!()[docs/media/project2_razzledazzle.png]
 
 *Anyway,* the scripting for these is rather straightforward. I just had to modify the code from our interactions lab, the one with the launcher. I changed the number of objects generated, then had to add specific tags to them (you’ll see why soon). The particles themselves, Razzle and Dazzle, are just small colored spheres with rigidbodies and 3-second lifetimes (again, from the lab).
 
@@ -113,8 +113,6 @@ I also used visual feedback to show the user that certain actions have been comp
 This was placed on the stove’s script after some debugging showed that when the pot is on the stove and, during the time that the user would move the dial, the trigger event would pass. But it’s still really fun to watch the ingredients ‘melt’.
 
 And once the mixture has melted, you’re prompted to place the pot onto a table in the next station. This is where the script for the pot ends, as when you place it on the wiring table it will trigger things for the wiring of the explosive.
-
-
 
 
 #### The Stove 
