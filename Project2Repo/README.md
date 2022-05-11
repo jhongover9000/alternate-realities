@@ -19,9 +19,9 @@ The plan was to have at least 4 interactions. The first was the cutting of ingre
 
 *Anyway,* the point was to make a fun little interactive scene for users to mess around with ingredients and have fun.
 
-![](/media/interactions_sketch1.png)
+![](alternate-realities/docs/media/interactions_sketch1.png)
 
-![](media/interactions_sketch2.png)
+![](/docs/media/interactions_sketch2.png)
 
 But we also needed to make sure they’d go in order. The original idea was that we would make all items of a station non-interactive unless the user finished a step previous to it, but as we progressed I realized that scripting all of that would be a really, really big pain. I could have technically hardcoded it all, but I chose to take the easy way out and used walls (explained later).
 
