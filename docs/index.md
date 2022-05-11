@@ -5,11 +5,11 @@ ____
 
 ## QuickNav
 
-[a world on fire.](#project-one-a-world-on-fire)
+[a world on fire.](#a-world-on-fire)
 
-[but deliver us from evil.](#project-two-but-deliver-us-from-evil)
+[but deliver us from evil.](#but-deliver-us-from-evil)
 
-[our demons.](#project-three-our-demons)
+[our demons.](#our-demons)
 
 ____
 
