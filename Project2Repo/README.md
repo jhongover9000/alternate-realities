@@ -19,7 +19,7 @@ The plan was to have at least 4 interactions. The first was the cutting of ingre
 
 *Anyway,* the point was to make a fun little interactive scene for users to mess around with ingredients and have fun.
 
-![](media/interactions_sketch1.png)
+![](/media/interactions_sketch1.png)
 
 ![](media/interactions_sketch2.png)
 
